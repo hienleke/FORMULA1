@@ -1,9 +1,9 @@
 import { Request, Response, Router } from "express";
-import { getAlldriver } from "../controllers/driverController";
+import { getleaderboarddriver } from "../controllers/driverController";
 const driverRouter = Router();
 
 driverRouter.route("/leaderboards").get(async (request: Request, response: Response) => {
-     let result = await getAlldriver();
+     let result = await getleaderboarddriver();
      response.json(result);
 });
 

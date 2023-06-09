@@ -1,9 +1,9 @@
 import { Request, Response, Router } from "express";
 const raceRouter = Router();
-import { getAlldriver } from "../controllers/driverController";
+import { getleaderboarddriver } from "../controllers/driverController";
 
 raceRouter.route("/leaderboards").get(async (request: Request, response: Response) => {
-     let result = await getAlldriver();
+     let result = await getleaderboarddriver();
      response.json(result);
 });
 

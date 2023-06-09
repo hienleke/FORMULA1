@@ -1,7 +1,7 @@
 import { getAll } from "../model/Driver";
 
-async function getAlldriver() {
+async function getleaderboarddriver() {
      return await getAll();
 }
 
-export { getAlldriver };
+export { getleaderboarddriver };
