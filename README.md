@@ -37,7 +37,7 @@ All Model in project
 | Driver     | get ranking of drivers in every year | localhost:3000/driver/leaderboards     |
 | Race       | get winner by race in every year     | localhost:3000/race/leaderboards       |
 | FastestLap | get winner fastestLap in every year  | localhost:3000/fastestlap/leaderboards |
-| Team       | get ranking of team in every year    | localhost:3000/team/leaderboards       |
+| Team       | get ranking of team by year          | localhost:3000/team/leaderboards/:year |
 
 Demo :
 localhost:3000/driver/leaderboards 
@@ -46,6 +46,9 @@ localhost:3000/race/leaderboards
 <img width="884" alt="image" src="https://github.com/xSaboteur/FORMULA1/assets/40647637/0fa978fe-214b-449f-ad61-4647296a5eae">
 localhost:3000/fastestlap/leaderboards
 <img width="901" alt="image" src="https://github.com/xSaboteur/FORMULA1/assets/40647637/f511ec18-848f-46b8-afcb-ac9fcc229dd7">
+localhost:3000/team/leaderboards/2005
+<img width="843" alt="image" src="https://github.com/xSaboteur/FORMULA1/assets/40647637/03db3118-0c47-42bd-9f8f-7af43186722a">
+
 
 
 
