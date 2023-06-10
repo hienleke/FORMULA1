@@ -34,7 +34,7 @@ All Model in project
 
 | model      | description                          | api test                               |
 | :--------- | :----------------------------------- | :------------------------------------- |
-| Driver     | get ranking of drivers in every year | localhost:3000/driver/leaderboards     |<img width="562" alt="image" src="https://github.com/xSaboteur/FORMULA1/assets/40647637/80929940-1087-4eb3-ba65-e704d2e328d1">
+| Driver     | get ranking of drivers in every year | localhost:3000/driver/leaderboards     |<img width="737" alt="image" src="https://github.com/xSaboteur/FORMULA1/assets/40647637/ef3dd1f2-96fe-4345-8929-2c2c9cc8a207">
 
 | Race       | get winner by race in every year     | localhost:3000/race/leaderboards       |<img width="849" alt="image" src="https://github.com/xSaboteur/FORMULA1/assets/40647637/1d23698a-7d6c-47ab-83cc-28ff487e384d">
 
