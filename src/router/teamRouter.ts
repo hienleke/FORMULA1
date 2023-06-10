@@ -10,4 +10,9 @@ teamRouter.route("/leaderboards/:year").get(async (request: Request, response: R
      response.json(result);
 });
 
+teamRouter.route("/leaderboards").get(async (request: Request, response: Response) => {
+     let result = await getleaderboardteam(null, null);
+     response.json(result);
+});
+
 export default teamRouter;
