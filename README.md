@@ -61,6 +61,8 @@ step2: save crawled data json into data folder to manage and then gereral 4 file
 
 step3 : create API
 
+step 4: cache data that is array to get data quickly
+
 More : + Want to do some code that can cache and auto update data by time in day
 
 ## note
