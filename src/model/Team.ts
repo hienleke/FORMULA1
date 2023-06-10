@@ -19,16 +19,17 @@ async function find(year: Number, team: String) {
      } else if (year && team) {
           console.log(" running 1");
           data = await TeamModel.find({ year: year, "data.Team": team });
+          if (data.length > 0) data = data[0].data.find((ele) => ele.Team == team);
      } else if (year) {
-          console.log(" run here 2  ");
           data = await TeamModel.find({ year: year });
      } else if (team) {
-          console.log(" run here 3  ");
           data = await TeamModel.find({ "data.Team": team });
+          for (let eleArray of data) {
+               console.log(" eleArray : ", eleArray);
+               eleArray.data = eleArray.data.find((i: any) => i.Team == team);
+          }
      }
      return data;
-     // if (!year && team) data = await TeamModel.find({data : })
 }
-export const getRacebyYear = (year: number) => TeamModel.findOne({ year: year });
 
 export { find };
