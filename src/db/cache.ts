@@ -1,5 +1,6 @@
+const pem = "jl4L6SkyKvsP8WnwjPW7DrxXXBNxcZgC";
+
 import { createClient } from "redis";
-const pem =  "jl4L6SkyKvsP8WnwjPW7DrxXXBNxcZgC"
 
 const client = createClient({
      password: pem,
@@ -8,10 +9,15 @@ const client = createClient({
           port: 16159,
      },
 });
-client.on("error", (err) => console.log("Redis Client Error", err));
 
-const redis = await client.connect();
+async function connectRds() {
+     client.on("ready", () => {
+          console.log("Connected!");
+     });
+     client.on("error", (err) => {
+          console.error(err);
+     });
+     return await client.connect();
+}
 
-console.log(" redis data : ", redis);
-
-export default redis;
+export { connectRds, client as Rds };
