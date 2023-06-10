@@ -40,7 +40,7 @@ All Model in project
 | Team       | get ranking of team by year          | localhost:3000/team/leaderboards/?team=<teamname>&year=<year> |
 
 Demo :
-localhost:3000/driver/leaderboards 
+localhost:3000/driver/leaderboards
 <img width="878" alt="image" src="https://github.com/xSaboteur/FORMULA1/assets/40647637/75db79fd-c706-43c1-b6c2-e0e86d5c377f">
 localhost:3000/race/leaderboards
 <img width="884" alt="image" src="https://github.com/xSaboteur/FORMULA1/assets/40647637/0fa978fe-214b-449f-ad61-4647296a5eae">
@@ -55,6 +55,15 @@ localhost:3000/team/leaderboards/?year=2001    <- this is get leaderboard team i
 
 
 
+## Solution
 
+step1: using cheerio to craw data table from html
+step2: save crawled data json into data folder to manage and then gereral 4 file drives.json , fasttest-laps.json, races.json, team.json and using compass tool import data to mongo Cloud database with 4 json file
+step3 : create API
 
+More : + Want to do some code that can cache and auto update data by tim in day
 
+## note
+
+-    crawdata.js is the file crawled into data Folder
+-    createJsonfile2importMongo.js is the file general 4 json file that can import into mongo

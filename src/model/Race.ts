@@ -10,8 +10,6 @@ export const RaceModel = mongoose.model("races", Race);
 // User Actions
 
 async function getAll() {
-     console.log(" run hereh");
-     //  let data = await RaceModel.find({});
      let data = await RaceModel.find({});
      return data;
 }
