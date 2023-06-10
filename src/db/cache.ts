@@ -1,7 +1,8 @@
 import { createClient } from "redis";
+const pem =  "jl4L6SkyKvsP8WnwjPW7DrxXXBNxcZgC"
 
 const client = createClient({
-     password: "jl4L6SkyKvsP8WnwjPW7DrxXXBNxcZgC",
+     password: pem,
      socket: {
           host: "redis-16159.c54.ap-northeast-1-2.ec2.cloud.redislabs.com",
           port: 16159,

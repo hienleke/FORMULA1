@@ -9,15 +9,17 @@ export const TeamModel = mongoose.model("teams", Team);
 
 // User Actions
 
-async function getAll() {
-     console.log(" run hereh");
-     //  let data = await RaceModel.find({});
-     let data = await TeamModel.find({});
+async function find(year: Number, team: String) {
+     let data;
+     console.log(`year : ${year} team : ${team}`);
+     if (!year && !team) data = await TeamModel.find({});
+     if (year && !team) data = await TeamModel.find({ year: year });
      return data;
+     // if (!year && team) data = await TeamModel.find({data : })
 }
 export const getRacebyYear = (year: number) => TeamModel.findOne({ year: year });
 // export const getUserBySessionToken = (sessionToken: string) => RaceModel.findOne({ "authentication.sessionToken": sessionToken });
 // export const getUserById = (id: string) => RaceModel.findById(id);
 // export const createUser = (values: Record<string, any>) => new RaceModel(values).save().then((user) => user.toObject());
 
-export { getAll };
+export { find };
