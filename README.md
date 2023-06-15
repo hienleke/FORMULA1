@@ -37,7 +37,7 @@ All Model in project
 | Driver     | get ranking of drivers in every year | localhost:3000/driver/leaderboards                            |
 | Race       | get winner by race in every year     | localhost:3000/race/leaderboards                              |
 | FastestLap | get winner fastestLap in every year  | localhost:3000/fastestlap/leaderboards                        |
-| Team       | get ranking of team by year          | localhost:3000/team/leaderboards/?team=`teamname`>&year=`year`|
+| Team       | get ranking of team by year          | localhost:3000/team/leaderboards/?team=`teamname`&year=`year`|
 
 Demo :
 localhost:3000/driver/leaderboards
